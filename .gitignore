@@ -29,6 +29,7 @@ plugins/android.json
 plugins/ios.json
 www/
 package-lock.json
+src/app/firebase.config.ts
 $RECYCLE.BIN/
 
 .DS_Store
