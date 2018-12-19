@@ -20,3 +20,9 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
+
+.toast-wrapper {
+    width: calc(100% - 10px) !important;
+    margin: 10px auto !important;
+    border-radius: 8px;
+}
