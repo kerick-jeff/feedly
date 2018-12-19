@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
-
 import * as firebase from 'firebase/app';
 import 'firebase/auth'
+
+import { FeedPage } from '../feed/feed';
 
 @IonicPage()
 @Component({
@@ -28,7 +29,9 @@ export class LoginPage {
       this.toastCtrl.create({
         message: 'Welcome ' + data.user.displayName,
         duration: 3000
-      }).present()
+      }).present().then(() => {
+        this.navCtrl.setRoot(FeedPage)
+      })
     }).catch((e) => {
       this.toastCtrl.create({
         message: e.message,

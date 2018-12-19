@@ -3,6 +3,8 @@ import { IonicPage, NavController, ToastController, AlertController } from 'ioni
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 
+import { FeedPage } from '../feed/feed';
+
 @IonicPage()
 @Component({
   selector: 'page-signup',
@@ -40,6 +42,7 @@ export class SignupPage {
               text: 'OK',
               handler: () => {
                 // Navigate to feed page
+                this.navCtrl.setRoot(FeedPage)
               }
             }
           ]
