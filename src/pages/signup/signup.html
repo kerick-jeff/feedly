@@ -18,7 +18,7 @@
         <ion-icon name="person" color="danger"></ion-icon>
       </ion-col>
       <ion-col col-10>
-        <ion-input type="text" placeholder="Enter you name"></ion-input>
+        <ion-input [(ngModel)]="name" type="text" placeholder="Enter you name"></ion-input>
       </ion-col>
     </ion-row>
 
@@ -27,7 +27,7 @@
         <ion-icon name="mail" color="danger"></ion-icon>
       </ion-col>
       <ion-col col-10>
-        <ion-input type="email" placeholder="Enter you email"></ion-input>
+        <ion-input [(ngModel)]="email" type="email" placeholder="Enter you email"></ion-input>
       </ion-col>
     </ion-row>
 
@@ -36,12 +36,12 @@
         <ion-icon name="key" color="danger"></ion-icon>
       </ion-col>
       <ion-col col-10>
-        <ion-input type="password" placeholder="Enter your password"></ion-input>
+        <ion-input [(ngModel)]="password" type="password" placeholder="Enter your password"></ion-input>
       </ion-col>
     </ion-row>
 
     <ion-row>
-      <button ion-button block round outline color="light">Signup</button>
+      <button (click)="signup()" ion-button block round outline color="light">Sign Up</button>
     </ion-row>
   </ion-grid>
 
