@@ -1,0 +1,55 @@
+page-signup {
+    ion-content {
+        .scroll-content {
+            overflow: hidden;
+            background-color: color($colors, 'danger');
+        
+            ion-item {
+                background-color: color($colors, 'danger');
+
+                ion-icon {
+                    font-size: 20vh;
+                }
+
+                h1 {
+                    font-weight: 700;
+                    font-size: 1.4em;
+                }
+
+                h6 {
+                    font-size: 1em;
+                }
+
+                h1, h6 {
+                    color: white;
+                }
+            }
+
+            ion-grid {
+                ion-row {
+                    margin-top: 2vh;
+
+                    button {
+                        text-transform: uppercase;
+                    }
+                }
+
+                ion-row.auth-input {
+                    background-color: white;
+                    border-radius: 50px;
+
+                    ion-col {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        padding: 0;
+                    }
+
+                    ion-col[col-2] {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

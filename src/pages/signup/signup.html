@@ -1,0 +1,49 @@
+<ion-content padding>
+  <button (click)="goBack()" ion-button clear color="light" icon-only class="back">
+    <ion-icon name="ios-arrow-back"></ion-icon>
+  </button>
+
+  <ion-item text-center no-lines>
+    <ion-icon name="logo-rss" color="light"></ion-icon>
+  </ion-item>
+
+  <ion-item text-center no-lines>
+    <h1>Feedly</h1>
+    <h6>An app for continuous feed</h6>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row class="auth-input">
+      <ion-col col-2>
+        <ion-icon name="person" color="danger"></ion-icon>
+      </ion-col>
+      <ion-col col-10>
+        <ion-input type="text" placeholder="Enter you name"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="auth-input">
+      <ion-col col-2>
+        <ion-icon name="mail" color="danger"></ion-icon>
+      </ion-col>
+      <ion-col col-10>
+        <ion-input type="email" placeholder="Enter you email"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="auth-input">
+      <ion-col col-2>
+        <ion-icon name="key" color="danger"></ion-icon>
+      </ion-col>
+      <ion-col col-10>
+        <ion-input type="password" placeholder="Enter your password"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <button ion-button block round outline color="light">Signup</button>
+    </ion-row>
+  </ion-grid>
+
+  <button (click)="goBack()" ion-button block clear color="light">Already have an account? Log In</button>
+</ion-content>
